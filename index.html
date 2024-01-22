@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- tailwind & daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind custom color -->
+        <script> 
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color': '#FF4240',
+                'heading-color': '#131318',
+                'paragraph-clr': '#13131899'
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+           .font-style{
+            font-family: 'Manrope', sans-serif;
+           }
+    </style>
+ 
+</head>
+<body class="font-style">
+    <header class="container mx-auto">
+        <!-- navbar start -->
+        <nav class="mt-[10px] lg:mt-[30px]">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-primary-color">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <h2 class="text-2xl font-extrabold lg:text-3xl text-heading-color">Hockey<span class="text-primary-color">’</span>s</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base">
+                    <li><a class="text-primary-color">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-[48px]">
+                    <div class="hidden lg:block">
+                        <svg class="h-6 w-6 text-[#89898B]"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" /></svg>
+
+                    </div>
+                        <a class="btn text-[#FFF] bg-primary-color lg:px-6 lg:py-3 lg:h-[57px] lg:text-xl">Get Ticket</a>
+                  
+                </div>
+              </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- banner start -->
+            <div class="carousel lg:w-full h-[200px]  lg:h-[550px] mt-[10px] lg:mt-[35px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-center items-center transform -translate-y-1/2 top-[80%] left-[38%] lg:left-8 lg:right-[88%] lg:top-[90%] gap-4">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0 ">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-8 right-[88%] top-[90%]">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0 ">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0 ">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-8 right-[88%] top-[90%]">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0 ">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-0 ">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-8 right-[88%] top-[90%]">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0 ">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0 ">❯</a>
+                  </div>
+                </div>
+              </div>
+        
+        <!-- banner end -->
+
+    </header>
+    <main class="container mx-auto">
+        <section class=" h-[450px] mt-[50px]">
+            <div class="text-center mb-[80px]">
+                <h2 class="text-3xl font-extrabold pb-6 text-header-color">Professional Hockeys Club</h2>
+                <p class="w-[600px] mx-auto text-paragraph-clr text-[16px] ">Professional hockey clubs are organizations that compete at the highest level of ice hockey, participating in various leagues and tournaments around the world.</p>
+            </div>
+            <div class="flex justify-aound gap-7">
+                <div class="">
+                    <div class="flex justify-center mb-5">
+                        <div class="radial-progress text-primary text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-heading-color font-extrabold text-xl">87%</span></div>
+
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-[20px] pb-4 font-semibold">Prayer Facility</h2>
+                    <p class="text-paragraph-clr text-[16px]">The player faculty of a professional hockey club encompasses the roster of athletes.</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="">
+                    <div class="flex justify-center mb-5">
+                        <div class="radial-progress text-primary text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-heading-color font-extrabold text-xl">95%</span></div>
+
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-[20px] pb-4 font-semibold">Experienced Coach</h2>
+                    <p class="text-paragraph-clr text-[16px] ">The player faculty of a professional hockey club encompasses the roster of athletes.</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class=" ">
+                    <div class="flex justify-center mb-5">
+                        <div class="radial-progress text-primary text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-heading-color font-extrabold text-xl">90%</span></div>
+
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-[20px] pb-4 font-semibold">Senior Player</h2>
+                    <p class="text-paragraph-clr text-[16px]">The player faculty of a professional hockey club encompasses the roster of athletes.</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class=" ">
+                    <div class="flex justify-center mb-5">
+                        <div class="radial-progress text-primary text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-heading-color font-extrabold text-xl">80%</span></div>
+
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-[20px] pb-4 font-semibold">Training Ground</h2>
+                    <p class="text-paragraph-clr text-[16px]">The player faculty of a professional hockey club encompasses the roster of athletes.</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            hufg
+        </section>
+        
+        
+    </main>
+    
+</body>
+</html>
